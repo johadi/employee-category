@@ -37,7 +37,7 @@ export class HourlyRatedEmployee extends Employee {
         return this.getHourlyRate() * this.getHoursWorked();
     }
 
-    // This category of employee has no basic salary so we override the super class accordingly
+    // This category of employee has no basic salary so we override it in the super class accordingly
     getEmployeeInfo() {
         return super.getEmployeeInfo(false);
     }

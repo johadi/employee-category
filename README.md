@@ -12,7 +12,7 @@ he/she is only paid based on the hours worked and the hourly rate attached to th
 based on the sales volumes he/she made and the commission rate assign to that job.
 
 # How to run the program
-To run the program, follow the following steps:
+To run the program, use the following steps:
 
 1. `npm install` to install the project dependencies specified in the project's package.json.
 2. `npm run start` to get the application running.

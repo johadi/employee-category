@@ -7,5 +7,5 @@ export interface EmployeeInterface {
 
     calculateNetSalary(): number;
 
-    getEmployeeInfo(hasBasicSalary?: boolean): EmployeeInfoInterface;
+    getEmployeeInfo(hasBasicSalary: boolean): EmployeeInfoInterface;
 }
