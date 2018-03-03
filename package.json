@@ -1,0 +1,25 @@
+{
+  "name": "my-oop",
+  "version": "1.0.0",
+  "description": "oop demostration using the employee scenario",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "test": "mocha --require ts-node/register tests/**/*.test.ts",
+    "test:build": "npm run build && mocha dist/tests/*.test.js",
+    "build": "tsc -p ./",
+    "start:build": "npm run build -- -w"
+  },
+  "author": "jimoh hadi",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.48",
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3",
+    "ts-node": "^5.0.1"
+  },
+  "dependencies": {
+    "typescript": "^2.7.2"
+  }
+}
