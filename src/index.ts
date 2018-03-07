@@ -9,6 +9,9 @@ const commissionBasedEmployee: CommissionBasedEmployee = new CommissionBasedEmpl
 //Polymorphic form
 const newHourlyRatedEmployee: Employee = new HourlyRatedEmployee('sff4536377', 'Olu Ade', 0, 20, 0.8);
 
+//Use our method overloading here
+employee.setEmployeeProperty('name', 'Muhammed Jamiu');
+
 console.log(employee.getEmployeeInfo());
 console.log(hourlyRatedEmployee.getEmployeeInfo());
 console.log(commissionBasedEmployee.getEmployeeInfo());

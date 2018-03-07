@@ -42,6 +42,21 @@ export class Employee implements EmployeeInterface {
         this.basicSalary = basicSalary;
     }
 
+    setEmployeeProperty(property: string, value: string | number) {
+
+        if(property === 'staffId') {
+            this.staffId = <string>value;
+        }
+
+        if(property === 'name') {
+            this.name = <string>value;
+        }
+
+        if(property === 'basicSalary'){
+            this.basicSalary = <number>value;
+        }
+    }
+
     //net salary of an ordinary employee should just be his basic salary
     calculateNetSalary(): number {
         return this.getBasicSalary();
@@ -59,5 +74,6 @@ export class Employee implements EmployeeInterface {
 
         return employeeInfo;
     }
+
 
 }
